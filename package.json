@@ -1,0 +1,37 @@
+{
+  "name": "discord-multibot",
+  "version": "1.0.0",
+  "description": "Modular multifunction Discord bot (discord.js v14 + built-in SQLite)",
+  "main": "src/index.js",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "deploy": "node --disable-warning=ExperimentalWarning src/deploy-commands.js",
+    "deploy:guild": "node --disable-warning=ExperimentalWarning src/deploy-commands.js --guild",
+    "undeploy": "node --disable-warning=ExperimentalWarning src/deploy-commands.js --clear",
+    "check": "node --disable-warning=ExperimentalWarning scripts/check.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"tests/*.test.js\""
+  },
+  "dependencies": {
+    "discord.js": "^14.28.0",
+    "dotenv": "^16.4.5"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eznuke/Project-028.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eznuke/Project-028/issues"
+  },
+  "homepage": "https://github.com/Eznuke/Project-028#readme"
+}
